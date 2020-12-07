@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e1a2bae9-cef4-41ba-a29d-b7376ab2c098}</ProjectGuid>
+    <RootNamespace>Gambitgui</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;./wxWidgets/include;./src/labenski/include;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;./wxWidgets/include;./src/labenski/include;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;./wxWidgets/include;./src/labenski/include;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;./wxWidgets/include;./src/labenski/include;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);wxUSE_ANY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);wxUSE_ANY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);wxUSE_ANY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);wxUSE_ANY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gui\analysis.cc" />
+    <ClCompile Include="src\gui\dcsvg.cc" />
+    <ClCompile Include="src\gui\dlabout.cc" />
+    <ClCompile Include="src\gui\dleditmove.cc" />
+    <ClCompile Include="src\gui\dleditnode.cc" />
+    <ClCompile Include="src\gui\dlefglayout.cc" />
+    <ClCompile Include="src\gui\dlefglegend.cc" />
+    <ClCompile Include="src\gui\dlefglogit.cc" />
+    <ClCompile Include="src\gui\dlefgreveal.cc" />
+    <ClCompile Include="src\gui\dlgameprop.cc" />
+    <ClCompile Include="src\gui\dlinsertmove.cc" />
+    <ClCompile Include="src\gui\dlnash.cc" />
+    <ClCompile Include="src\gui\dlnashmon.cc" />
+    <ClCompile Include="src\gui\dlnfglogit.cc" />
+    <ClCompile Include="src\gui\edittext.cc" />
+    <ClCompile Include="src\gui\efgdisplay.cc" />
+    <ClCompile Include="src\gui\efglayout.cc" />
+    <ClCompile Include="src\gui\efgpanel.cc" />
+    <ClCompile Include="src\gui\efgprofile.cc" />
+    <ClCompile Include="src\gui\gambit.cc" />
+    <ClCompile Include="src\gui\gamedoc.cc" />
+    <ClCompile Include="src\gui\gameframe.cc" />
+    <ClCompile Include="src\gui\nfgpanel.cc" />
+    <ClCompile Include="src\gui\nfgprofile.cc" />
+    <ClCompile Include="src\gui\nfgtable.cc" />
+    <ClCompile Include="src\gui\renratio.cc" />
+    <ClCompile Include="src\gui\style.cc" />
+    <ClCompile Include="src\gui\valnumber.cc" />
+    <ClCompile Include="src\labenski\src\block.cpp" />
+    <ClCompile Include="src\labenski\src\bmpcombo.cpp" />
+    <ClCompile Include="src\labenski\src\dropdown.cpp" />
+    <ClCompile Include="src\labenski\src\fourier.c" />
+    <ClCompile Include="src\labenski\src\fparser.cpp" />
+    <ClCompile Include="src\labenski\src\genergdi.cpp" />
+    <ClCompile Include="src\labenski\src\geometry.cpp" />
+    <ClCompile Include="src\labenski\src\lm_lsqr.cpp" />
+    <ClCompile Include="src\labenski\src\menubtn.cpp" />
+    <ClCompile Include="src\labenski\src\optvalue.cpp" />
+    <ClCompile Include="src\labenski\src\plotctrl.cpp" />
+    <ClCompile Include="src\labenski\src\plotcurv.cpp" />
+    <ClCompile Include="src\labenski\src\plotdata.cpp" />
+    <ClCompile Include="src\labenski\src\plotdraw.cpp" />
+    <ClCompile Include="src\labenski\src\plotfunc.cpp" />
+    <ClCompile Include="src\labenski\src\plotmark.cpp" />
+    <ClCompile Include="src\labenski\src\plotprnt.cpp" />
+    <ClCompile Include="src\labenski\src\range.cpp" />
+    <ClCompile Include="src\labenski\src\sheet.cpp" />
+    <ClCompile Include="src\labenski\src\sheetatr.cpp" />
+    <ClCompile Include="src\labenski\src\sheetedg.cpp" />
+    <ClCompile Include="src\labenski\src\sheetedt.cpp" />
+    <ClCompile Include="src\labenski\src\sheetren.cpp" />
+    <ClCompile Include="src\labenski\src\sheetsel.cpp" />
+    <ClCompile Include="src\labenski\src\sheetspt.cpp" />
+    <ClCompile Include="src\labenski\src\sheettbl.cpp" />
+    <ClCompile Include="src\labenski\src\spinctld.cpp" />
+    <ClCompile Include="src\labenski\src\toggle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gui\analysis.h" />
+    <ClInclude Include="src\gui\dcsvg.h" />
+    <ClInclude Include="src\gui\dlabout.h" />
+    <ClInclude Include="src\gui\dleditmove.h" />
+    <ClInclude Include="src\gui\dleditnode.h" />
+    <ClInclude Include="src\gui\dlefglayout.h" />
+    <ClInclude Include="src\gui\dlefglegend.h" />
+    <ClInclude Include="src\gui\dlefglogit.h" />
+    <ClInclude Include="src\gui\dlefgreveal.h" />
+    <ClInclude Include="src\gui\dlexcept.h" />
+    <ClInclude Include="src\gui\dlgameprop.h" />
+    <ClInclude Include="src\gui\dlinsertmove.h" />
+    <ClInclude Include="src\gui\dlnash.h" />
+    <ClInclude Include="src\gui\dlnashmon.h" />
+    <ClInclude Include="src\gui\edittext.h" />
+    <ClInclude Include="src\gui\efgdisplay.h" />
+    <ClInclude Include="src\gui\efglayout.h" />
+    <ClInclude Include="src\gui\efgpanel.h" />
+    <ClInclude Include="src\gui\efgprofile.h" />
+    <ClInclude Include="src\gui\gambit.h" />
+    <ClInclude Include="src\gui\gamedoc.h" />
+    <ClInclude Include="src\gui\gameframe.h" />
+    <ClInclude Include="src\gui\menuconst.h" />
+    <ClInclude Include="src\gui\nfgpanel.h" />
+    <ClInclude Include="src\gui\nfgprofile.h" />
+    <ClInclude Include="src\gui\nfgtable.h" />
+    <ClInclude Include="src\gui\renratio.h" />
+    <ClInclude Include="src\gui\style.h" />
+    <ClInclude Include="src\gui\valnumber.h" />
+    <ClInclude Include="src\labenski\src\fparser.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\labenski\src\fourier.txt" />
+    <Text Include="src\labenski\src\fparser.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

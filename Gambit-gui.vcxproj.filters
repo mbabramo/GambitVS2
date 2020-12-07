@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Labensky">
+      <UniqueIdentifier>{27d44725-ae15-447d-9e8c-e19e53a85082}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gui\analysis.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dcsvg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlabout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dleditmove.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dleditnode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlefglayout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlefglegend.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlefglogit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlefgreveal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlgameprop.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlinsertmove.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlnash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlnashmon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlnfglogit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\edittext.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\efgdisplay.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\efglayout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\efgpanel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\efgprofile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gambit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gamedoc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gameframe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\nfgpanel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\nfgprofile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\nfgtable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\renratio.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\style.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\valnumber.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\block.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\bmpcombo.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\dropdown.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\fourier.c">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\fparser.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\genergdi.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\geometry.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\lm_lsqr.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\menubtn.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\optvalue.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotctrl.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotcurv.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotdata.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotdraw.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotfunc.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotmark.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\plotprnt.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\range.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheet.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetatr.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetedg.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetedt.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetren.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetsel.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheetspt.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\sheettbl.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\spinctld.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+    <ClCompile Include="src\labenski\src\toggle.cpp">
+      <Filter>Labensky</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gui\analysis.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dcsvg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlabout.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dleditmove.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dleditnode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlefglayout.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlefglegend.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlefglogit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlefgreveal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlexcept.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlgameprop.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlinsertmove.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlnash.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlnashmon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\edittext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\efgdisplay.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\efglayout.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\efgpanel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\efgprofile.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\gambit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\gamedoc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\gameframe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\menuconst.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\nfgpanel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\nfgprofile.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\nfgtable.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\renratio.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\style.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\valnumber.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\labenski\src\fparser.hh">
+      <Filter>Labensky</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\labenski\src\fourier.txt">
+      <Filter>Labensky</Filter>
+    </Text>
+    <Text Include="src\labenski\src\fparser.txt">
+      <Filter>Labensky</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{961974a8-9414-408a-805e-4c774c1a79fa}</ProjectGuid>
+    <RootNamespace>Gambit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GambitLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;./library/include/gambit;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;./library/include/gambit;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;./library/include/gambit;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;./library/include/gambit;$(IncludePath)</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="library\src\agg\agg.cc" />
+    <ClCompile Include="library\src\agg\bagg.cc" />
+    <ClCompile Include="library\src\behav.cc" />
+    <ClCompile Include="library\src\behavitr.cc" />
+    <ClCompile Include="library\src\behavspt.cc" />
+    <ClCompile Include="library\src\dvector.cc" />
+    <ClCompile Include="library\src\enummixed\clique.cc" />
+    <ClCompile Include="library\src\enummixed\enummixed.cc" />
+    <ClCompile Include="library\src\enummixed\lrsenum.cc" />
+    <ClCompile Include="library\src\file.cc" />
+    <ClCompile Include="library\src\function.cc" />
+    <ClCompile Include="library\src\game.cc" />
+    <ClCompile Include="library\src\gameagg.cc" />
+    <ClCompile Include="library\src\gamebagg.cc" />
+    <ClCompile Include="library\src\gametable.cc" />
+    <ClCompile Include="library\src\gametree.cc" />
+    <ClCompile Include="library\src\gnm\gnm.cc" />
+    <ClCompile Include="library\src\gtracer\aggame.cc" />
+    <ClCompile Include="library\src\gtracer\cmatrix.cc" />
+    <ClCompile Include="library\src\gtracer\gnmgame.cc" />
+    <ClCompile Include="library\src\gtracer\gnm_.cc" />
+    <ClCompile Include="library\src\gtracer\ipa_gtracer.cc" />
+    <ClCompile Include="library\src\gtracer\nfgame.cc" />
+    <ClCompile Include="library\src\integer.cc" />
+    <ClCompile Include="library\src\ipa\ipa.cc" />
+    <ClCompile Include="library\src\lcp\efglcp.cc" />
+    <ClCompile Include="library\src\lcp\nfglcp.cc" />
+    <ClCompile Include="library\src\linalg\basis.cc" />
+    <ClCompile Include="library\src\linalg\btableau.cc" />
+    <ClCompile Include="library\src\linalg\lemketab.cc" />
+    <ClCompile Include="library\src\linalg\lhtab.cc" />
+    <ClCompile Include="library\src\linalg\lpsolve.cc" />
+    <ClCompile Include="library\src\linalg\lptab.cc" />
+    <ClCompile Include="library\src\linalg\ludecomp.cc" />
+    <ClCompile Include="library\src\linalg\tableau.cc" />
+    <ClCompile Include="library\src\lrs\lrslib.c" />
+    <ClCompile Include="library\src\lrs\lrsmp.c" />
+    <ClCompile Include="library\src\lrs\lrsnashlib.c" />
+    <ClCompile Include="library\src\matrix.cc" />
+    <ClCompile Include="library\src\mixed.cc" />
+    <ClCompile Include="library\src\nash.cc" />
+    <ClCompile Include="library\src\pvector.cc" />
+    <ClCompile Include="library\src\rational.cc" />
+    <ClCompile Include="library\src\simpdiv\simpdiv.cc" />
+    <ClCompile Include="library\src\sqmatrix.cc" />
+    <ClCompile Include="library\src\stratitr.cc" />
+    <ClCompile Include="library\src\stratspt.cc" />
+    <ClCompile Include="library\src\tinyxml.cc" />
+    <ClCompile Include="library\src\tinyxmlerror.cc" />
+    <ClCompile Include="library\src\tinyxmlparser.cc" />
+    <ClCompile Include="library\src\vector.cc" />
+    <ClCompile Include="library\src\writer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="library\include\gambit\agg\agg.h" />
+    <ClInclude Include="library\include\gambit\agg\bagg.h" />
+    <ClInclude Include="library\include\gambit\agg\gray.h" />
+    <ClInclude Include="library\include\gambit\agg\proj_func.h" />
+    <ClInclude Include="library\include\gambit\agg\trie_map.h" />
+    <ClInclude Include="library\include\gambit\array.h" />
+    <ClInclude Include="library\include\gambit\behav.h" />
+    <ClInclude Include="library\include\gambit\behavitr.h" />
+    <ClInclude Include="library\include\gambit\behavspt.h" />
+    <ClInclude Include="library\include\gambit\dvector.h" />
+    <ClInclude Include="library\include\gambit\function.h" />
+    <ClInclude Include="library\include\gambit\gambit.h" />
+    <ClInclude Include="library\include\gambit\game.h" />
+    <ClInclude Include="library\include\gambit\gameagg.h" />
+    <ClInclude Include="library\include\gambit\gamebagg.h" />
+    <ClInclude Include="library\include\gambit\gameexpl.h" />
+    <ClInclude Include="library\include\gambit\gametable.h" />
+    <ClInclude Include="library\include\gambit\gametree.h" />
+    <ClInclude Include="library\include\gambit\gtracer\aggame.h" />
+    <ClInclude Include="library\include\gambit\gtracer\cmatrix.h" />
+    <ClInclude Include="library\include\gambit\gtracer\gnmgame.h" />
+    <ClInclude Include="library\include\gambit\gtracer\gtracer.h" />
+    <ClInclude Include="library\include\gambit\gtracer\nfgame.h" />
+    <ClInclude Include="library\include\gambit\integer.h" />
+    <ClInclude Include="library\include\gambit\linalg\basis.h" />
+    <ClInclude Include="library\include\gambit\linalg\bfs.h" />
+    <ClInclude Include="library\include\gambit\linalg\btableau.h" />
+    <ClInclude Include="library\include\gambit\linalg\lemketab.h" />
+    <ClInclude Include="library\include\gambit\linalg\lhtab.h" />
+    <ClInclude Include="library\include\gambit\linalg\lpsolve.h" />
+    <ClInclude Include="library\include\gambit\linalg\lptab.h" />
+    <ClInclude Include="library\include\gambit\linalg\ludecomp.h" />
+    <ClInclude Include="library\include\gambit\linalg\tableau.h" />
+    <ClInclude Include="library\include\gambit\linalg\vertenum.h" />
+    <ClInclude Include="library\include\gambit\list.h" />
+    <ClInclude Include="library\include\gambit\lrs\lrslib.h" />
+    <ClInclude Include="library\include\gambit\lrs\lrsmp.h" />
+    <ClInclude Include="library\include\gambit\lrs\lrsnashlib.h" />
+    <ClInclude Include="library\include\gambit\matrix.h" />
+    <ClInclude Include="library\include\gambit\mixed.h" />
+    <ClInclude Include="library\include\gambit\nash.h" />
+    <ClInclude Include="library\include\gambit\nash\enummixed.h" />
+    <ClInclude Include="library\include\gambit\nash\enumpure.h" />
+    <ClInclude Include="library\include\gambit\nash\gnm.h" />
+    <ClInclude Include="library\include\gambit\nash\ipa.h" />
+    <ClInclude Include="library\include\gambit\nash\lcp.h" />
+    <ClInclude Include="library\include\gambit\nash\simpdiv.h" />
+    <ClInclude Include="library\include\gambit\number.h" />
+    <ClInclude Include="library\include\gambit\pvector.h" />
+    <ClInclude Include="library\include\gambit\rational.h" />
+    <ClInclude Include="library\include\gambit\recarray.h" />
+    <ClInclude Include="library\include\gambit\shared_ptr.h" />
+    <ClInclude Include="library\include\gambit\sqmatrix.h" />
+    <ClInclude Include="library\include\gambit\stratitr.h" />
+    <ClInclude Include="library\include\gambit\stratspt.h" />
+    <ClInclude Include="library\include\gambit\tinyxml.h" />
+    <ClInclude Include="library\include\gambit\vector.h" />
+    <ClInclude Include="library\include\gambit\writer.h" />
+    <ClInclude Include="library\src\enummixed\clique.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="library\include\gambit\agg\trie_map.imp" />
+    <None Include="library\include\gambit\behav.imp" />
+    <None Include="library\include\gambit\dvector.imp" />
+    <None Include="library\include\gambit\linalg\btableau.imp" />
+    <None Include="library\include\gambit\linalg\lemketab.imp" />
+    <None Include="library\include\gambit\linalg\lhtab.imp" />
+    <None Include="library\include\gambit\linalg\lpsolve.imp" />
+    <None Include="library\include\gambit\linalg\lptab.imp" />
+    <None Include="library\include\gambit\linalg\ludecomp.imp" />
+    <None Include="library\include\gambit\linalg\vertenum.imp" />
+    <None Include="library\include\gambit\matrix.imp" />
+    <None Include="library\include\gambit\mixed.imp" />
+    <None Include="library\include\gambit\pvector.imp" />
+    <None Include="library\include\gambit\sqmatrix.imp" />
+    <None Include="library\include\gambit\vector.imp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

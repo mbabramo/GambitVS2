@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\agg">
+      <UniqueIdentifier>{33dffea2-71d5-419b-8987-8174385d2be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\enummixed">
+      <UniqueIdentifier>{a6b093aa-969b-4e62-b870-79f683e86308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gnm">
+      <UniqueIdentifier>{1d48578e-8625-4fb2-9379-0c768acf8ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ipa">
+      <UniqueIdentifier>{6b2f9851-c092-415d-aa41-9c527670bc49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lcp">
+      <UniqueIdentifier>{d7e85f8d-9583-48c1-ba2f-06653e35ea9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\linalg">
+      <UniqueIdentifier>{0b3aa5a0-a3f9-436a-b146-da44f91fe009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lrs">
+      <UniqueIdentifier>{2f82297a-ab36-400a-93ca-5f64735586a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simpdiv">
+      <UniqueIdentifier>{cb54311f-0265-49c8-94f9-46a66c0bf34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\agg">
+      <UniqueIdentifier>{5b1b11a6-eb19-41dc-831c-b512fc06e0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\linalg">
+      <UniqueIdentifier>{deaceeea-68ed-4659-908b-173d99bdff26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lrs">
+      <UniqueIdentifier>{3e2268dd-7b16-405f-be4c-7643a6ecead3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\nash">
+      <UniqueIdentifier>{df32d94f-29a7-4ba8-959f-5f0234bc9554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gtracer">
+      <UniqueIdentifier>{c382ef9a-047e-4656-ad6a-247ba1ea571f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gtracer">
+      <UniqueIdentifier>{347a2a07-f0c7-48b7-a33f-1e0344bc4122}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="library\src\behav.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\behavitr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\behavspt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\dvector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\file.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\function.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\game.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gameagg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gamebagg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gametable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gametree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\integer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\matrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\mixed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\nash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\pvector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\rational.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\sqmatrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stratitr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\stratspt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\tinyxml.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\tinyxmlerror.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\tinyxmlparser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\vector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\agg\agg.cc">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\agg\bagg.cc">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\enummixed\clique.cc">
+      <Filter>Source Files\enummixed</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\enummixed\enummixed.cc">
+      <Filter>Source Files\enummixed</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\enummixed\lrsenum.cc">
+      <Filter>Source Files\enummixed</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gnm\gnm.cc">
+      <Filter>Source Files\gnm</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\ipa\ipa.cc">
+      <Filter>Source Files\ipa</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\lcp\efglcp.cc">
+      <Filter>Source Files\lcp</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\lcp\nfglcp.cc">
+      <Filter>Source Files\lcp</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\basis.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\btableau.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\lemketab.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\lhtab.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\lpsolve.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\lptab.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\ludecomp.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\linalg\tableau.cc">
+      <Filter>Source Files\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\lrs\lrslib.c">
+      <Filter>Source Files\lrs</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\lrs\lrsmp.c">
+      <Filter>Source Files\lrs</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\lrs\lrsnashlib.c">
+      <Filter>Source Files\lrs</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\simpdiv\simpdiv.cc">
+      <Filter>Source Files\simpdiv</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\aggame.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\cmatrix.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\gnm_.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\gnmgame.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\nfgame.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+    <ClCompile Include="library\src\gtracer\ipa_gtracer.cc">
+      <Filter>Source Files\gtracer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="library\src\enummixed\clique.h">
+      <Filter>Source Files\enummixed</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\behav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\behavitr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\behavspt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\dvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gambit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gameagg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gamebagg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gameexpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gametable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gametree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\mixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\pvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\rational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\recarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\shared_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\sqmatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\stratitr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\stratspt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\tinyxml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\agg\agg.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\agg\bagg.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\agg\gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\agg\proj_func.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\agg\trie_map.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\basis.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\bfs.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\btableau.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\lemketab.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\lhtab.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\lpsolve.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\lptab.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\ludecomp.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\tableau.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\linalg\vertenum.h">
+      <Filter>Header Files\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\lrs\lrslib.h">
+      <Filter>Header Files\lrs</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\lrs\lrsmp.h">
+      <Filter>Header Files\lrs</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\lrs\lrsnashlib.h">
+      <Filter>Header Files\lrs</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\enummixed.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\enumpure.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\gnm.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\ipa.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\lcp.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\nash\simpdiv.h">
+      <Filter>Header Files\nash</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gtracer\aggame.h">
+      <Filter>Header Files\gtracer</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gtracer\cmatrix.h">
+      <Filter>Header Files\gtracer</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gtracer\gnmgame.h">
+      <Filter>Header Files\gtracer</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gtracer\gtracer.h">
+      <Filter>Header Files\gtracer</Filter>
+    </ClInclude>
+    <ClInclude Include="library\include\gambit\gtracer\nfgame.h">
+      <Filter>Header Files\gtracer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="library\include\gambit\behav.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\dvector.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\matrix.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\mixed.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\pvector.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\sqmatrix.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\vector.imp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="library\include\gambit\agg\trie_map.imp">
+      <Filter>Header Files\agg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\btableau.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\lemketab.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\lhtab.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\lpsolve.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\lptab.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\ludecomp.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+    <None Include="library\include\gambit\linalg\vertenum.imp">
+      <Filter>Header Files\linalg</Filter>
+    </None>
+  </ItemGroup>
+</Project>

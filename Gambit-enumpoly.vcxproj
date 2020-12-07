@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b2e35625-2ba2-4f02-bd43-1459abfd7e7f}</ProjectGuid>
+    <RootNamespace>Gambitenumpoly</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>./library/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./library/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(Platform)\$(Configuration)\GambitLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(Platform)\$(Configuration)\GambitLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(Platform)\$(Configuration)\GambitLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(Platform)\$(Configuration)\GambitLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tools\enumpoly\behavextend.cc" />
+    <ClCompile Include="src\tools\enumpoly\complex.cc" />
+    <ClCompile Include="src\tools\enumpoly\efgensup.cc" />
+    <ClCompile Include="src\tools\enumpoly\efgpoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\enumpoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\gpartltr.cc" />
+    <ClCompile Include="src\tools\enumpoly\gpoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\gpolyctr.cc" />
+    <ClCompile Include="src\tools\enumpoly\gpolylst.cc" />
+    <ClCompile Include="src\tools\enumpoly\gsolver.cc" />
+    <ClCompile Include="src\tools\enumpoly\ideal.cc" />
+    <ClCompile Include="src\tools\enumpoly\ineqsolv.cc" />
+    <ClCompile Include="src\tools\enumpoly\interval.cc" />
+    <ClCompile Include="src\tools\enumpoly\linrcomb.cc" />
+    <ClCompile Include="src\tools\enumpoly\monomial.cc" />
+    <ClCompile Include="src\tools\enumpoly\nfgcpoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\nfgensup.cc" />
+    <ClCompile Include="src\tools\enumpoly\nfghs.cc" />
+    <ClCompile Include="src\tools\enumpoly\nfgpoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\odometer.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelclass.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelclhpk.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelclqhl.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelclyal.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelconv.cc" />
+    <ClCompile Include="src\tools\enumpoly\peleval.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelgennd.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelgmatr.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelhomot.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelpred.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelprgen.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelproc.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelpsys.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelqhull.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelsymbl.cc" />
+    <ClCompile Include="src\tools\enumpoly\pelutils.cc" />
+    <ClCompile Include="src\tools\enumpoly\poly.cc" />
+    <ClCompile Include="src\tools\enumpoly\prepoly.cc" />
+    <ClCompile Include="src\tools\enumpoly\quiksolv.cc" />
+    <ClCompile Include="src\tools\enumpoly\rectangl.cc" />
+    <ClCompile Include="src\tools\enumpoly\sfg.cc" />
+    <ClCompile Include="src\tools\enumpoly\sfstrat.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\tools\enumpoly\behavextend.h" />
+    <ClInclude Include="src\tools\enumpoly\complex.h" />
+    <ClInclude Include="src\tools\enumpoly\efgensup.h" />
+    <ClInclude Include="src\tools\enumpoly\gnarray.h" />
+    <ClInclude Include="src\tools\enumpoly\gpartltr.h" />
+    <ClInclude Include="src\tools\enumpoly\gpoly.h" />
+    <ClInclude Include="src\tools\enumpoly\gpolyctr.h" />
+    <ClInclude Include="src\tools\enumpoly\gpolylst.h" />
+    <ClInclude Include="src\tools\enumpoly\gsolver.h" />
+    <ClInclude Include="src\tools\enumpoly\gtree.h" />
+    <ClInclude Include="src\tools\enumpoly\ideal.h" />
+    <ClInclude Include="src\tools\enumpoly\ineqsolv.h" />
+    <ClInclude Include="src\tools\enumpoly\interval.h" />
+    <ClInclude Include="src\tools\enumpoly\linrcomb.h" />
+    <ClInclude Include="src\tools\enumpoly\monomial.h" />
+    <ClInclude Include="src\tools\enumpoly\nfgcpoly.h" />
+    <ClInclude Include="src\tools\enumpoly\nfgensup.h" />
+    <ClInclude Include="src\tools\enumpoly\nfghs.h" />
+    <ClInclude Include="src\tools\enumpoly\odometer.h" />
+    <ClInclude Include="src\tools\enumpoly\pelclass.h" />
+    <ClInclude Include="src\tools\enumpoly\pelclhpk.h" />
+    <ClInclude Include="src\tools\enumpoly\pelclqhl.h" />
+    <ClInclude Include="src\tools\enumpoly\pelclyal.h" />
+    <ClInclude Include="src\tools\enumpoly\pelconv.h" />
+    <ClInclude Include="src\tools\enumpoly\peleval.h" />
+    <ClInclude Include="src\tools\enumpoly\pelgennd.h" />
+    <ClInclude Include="src\tools\enumpoly\pelgmatr.h" />
+    <ClInclude Include="src\tools\enumpoly\pelgntyp.h" />
+    <ClInclude Include="src\tools\enumpoly\pelhomot.h" />
+    <ClInclude Include="src\tools\enumpoly\pelpred.h" />
+    <ClInclude Include="src\tools\enumpoly\pelprgen.h" />
+    <ClInclude Include="src\tools\enumpoly\pelproc.h" />
+    <ClInclude Include="src\tools\enumpoly\pelpscon.h" />
+    <ClInclude Include="src\tools\enumpoly\pelpsys.h" />
+    <ClInclude Include="src\tools\enumpoly\pelqhull.h" />
+    <ClInclude Include="src\tools\enumpoly\pelsymbl.h" />
+    <ClInclude Include="src\tools\enumpoly\pelutils.h" />
+    <ClInclude Include="src\tools\enumpoly\poly.h" />
+    <ClInclude Include="src\tools\enumpoly\prepoly.h" />
+    <ClInclude Include="src\tools\enumpoly\quiksolv.h" />
+    <ClInclude Include="src\tools\enumpoly\rectangl.h" />
+    <ClInclude Include="src\tools\enumpoly\sfg.h" />
+    <ClInclude Include="src\tools\enumpoly\sfstrat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\tools\enumpoly\gnarray.imp" />
+    <None Include="src\tools\enumpoly\gpartltr.imp" />
+    <None Include="src\tools\enumpoly\gpoly.imp" />
+    <None Include="src\tools\enumpoly\gpolylst.imp" />
+    <None Include="src\tools\enumpoly\gsolver.imp" />
+    <None Include="src\tools\enumpoly\gtree.imp" />
+    <None Include="src\tools\enumpoly\ideal.imp" />
+    <None Include="src\tools\enumpoly\ineqsolv.imp" />
+    <None Include="src\tools\enumpoly\interval.imp" />
+    <None Include="src\tools\enumpoly\linrcomb.imp" />
+    <None Include="src\tools\enumpoly\monomial.imp" />
+    <None Include="src\tools\enumpoly\poly.imp" />
+    <None Include="src\tools\enumpoly\quiksolv.imp" />
+    <None Include="src\tools\enumpoly\rectangl.imp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
